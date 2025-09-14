@@ -1,0 +1,19 @@
+---
+web-prod:
+  hosts:
+    host1:
+      ansible_host: localhost
+      ansible_port: 22
+      ansible_user: ivan
+
+#  db-prod:
+#    hosts:
+#      host2:
+#        ansible_host: localhost
+#        ansible_port: 22
+#        ansible_user: ivan
+
+all:
+  children:
+    web-prod:
+    #  db-prod:
